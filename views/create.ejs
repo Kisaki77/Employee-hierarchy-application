@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating employee data</title>
+</head>
+<body style="background-color:bisque;">
+    <header style="background-color: burlywood;"><h2>Create Empoyee Data</h2></header>
+
+    <div class="creation" id="creation">
+        <form action="/creation" method="post">
+            <label for="fname" >First Name:</label><br>
+            <input type="text" name="fname" id="fname" pattern="[a-zA-Z'-'\s]*" size="25" id="fname" required><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname" pattern="[a-zA-Z'-'\s]*" size="25" id="lname" required><br>
+
+            <label for="date-of-birth">Date of Birth:</label><br>
+            <input type="date" name="birth" id="date-of-birth" required><br>
+
+            <label for="salary">Salary:</label><br>
+            <input type="number" name="salary" id="salary"><br>
+
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" name="phone" id="phone" required><br>
+
+            <label for="position">Role/Position:</label><br>
+            <input type="text" name="role" id="position" required><br>
+
+            <label for="reporting-line-manager">Reporting line manager:</label><br>
+            <textarea type="text" name="report" id="reporting-line-manager" required></textarea><br><br>
+
+            <input type="submit"  name="submit" value="Submit" >
+        </form>
+    </div>
+</body>
+</html>

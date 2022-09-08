@@ -1,0 +1,19 @@
+### Front-end 
+I have used JavaScript, CSS, and HTML to build up my front end
+
+### Back-end 
+- I have used node.js and Express.js for the server
+- I have used EJS for creating templates that generate HTML markup with plain JavaScript
+- I have used MongoDB as a database 
+
+I have used node.js and Express.js becuase they are based on JavaScript
+and they are the ones I decided to work with since I do not know any other I could 
+work with. This was my first time doing something like this because I had to study 
+a whole course that I did not manage to finish in 8 days, and that is one of my reasons
+why I could not finish the whole assessment. 
+I found it interesting in doing the assessment because I managed to study on how to do the 
+assessment and I learned new things while doing the course. 
+I wish I can submit the final assessment because I am very excited in finishing it and include
+all the things I did not manage to add such as adding the avatar, CSS, search bar and etc. 
+It waas really fun although I did not have enough time due to my academic and work
+commitments. 

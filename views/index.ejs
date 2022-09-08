@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee's hierarhy</title>
+</head>
+<body style="background-color:bisque;">
+    <section>
+        <header style="background-color: burlywood;">
+            <h1>EPI-USE Employee hierarhy</h1>
+        </header>
+
+        <div>
+            <h3>Click on the button below to create employee data.
+                employee data.
+            </h3>
+
+            <form action="/create" method="post">
+                <ul>
+                    <li><a class="active" ><button type="submit">Create</button></a></li><br>
+                </ul>
+            </form>
+
+            <h3>List of all employees
+            </h3>
+
+            <table>
+
+                <% allEmployees.forEach(function(employee){ %>
+
+                <tr id="data">
+                    <td>Gravatar</td>
+                    <td><%= employee.name + " " + employee.surname %> </td>
+                    <td><form action="/read" method="post">
+                        <button type="submit" name="read" value="<%= employee._id %>">View</button> 
+                    </form></td>
+                    <td><form action="/update" method="post">
+                        <button type="submit" name="update" value="<%= employee._id %>">Update</button> 
+                    </form></td>
+                    <td><form action="/delete" method="post">
+                        <button type="submit" name="delete" value="<%= employee._id %>">Delete</button> 
+                    </form></td>
+                </tr>
+
+                <% }) %>
+            </table>
+
+            <script>
+                function update(){
+                 document.getElementById("creation").value = "This is an auto-generated value";
+                }
+
+                function deleting(){
+                    const element = document.getElementById("data");
+                        element.remove();
+                }
+               </script>
+        </div>
+
+    </section>  
+</body>
+</html>
